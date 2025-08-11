@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="icon" type="image/png" href="../aula/icones/favicon.png" />
+    <!-- teste -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <title>e-Tech</title>
+</head>
+
+<body class="body-h">
+    <header id="header" class="header1">
+        <nav class="box1" id="box1">
+            <img src="logo.png">
+            <div class="icones">
+                <a href="#">
+                    <span class="material-symbols-outlined size-20">
+                        search
+                    </span>
+                </a>
+                <a href="ver-carrinho.php">
+                    <span class="material-symbols-outlined size-20">
+                        shopping_cart
+                    </span>
+                </a>
+                <a href="login.html">
+                    <span class="material-symbols-outlined size-20">
+                        person
+                    </span>
+                </a>
+            </div>
+
+        </nav>
+        <nav class="box" id="box" class="header1">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="paginas_produtos/computadores.html">Computadores</a></li>
+                <li><a href="paginas_produtos/hardwares.html">Hardwares</a></li>
+                <li><a href="paginas_produtos/celulares.html">Celulares</a></li>
+                <li><a href="paginas_produtos/tablets.html">Tablets</a></li>
+                <li><a href="paginas_produtos/fones.html">Fones</a></li>
+                <li><a href="paginas_produtos/notebooks.html">Notebooks</a></li>
+                <li><a href="paginas_produtos/perifericos.html">Periféricos</a></li>
+                <li><a href="paginas_produtos/outros.html">Outros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="tudo" class="tudo">
+        <!------------------------------------------------------------------------------------------------------------------->
+        <div class="carrossel">
+            <button id="botaoVoltar" class="botao">
+                <span class="material-symbols-outlined size-20">
+                    arrow_back_ios
+                </span>
+            </button>
+            <div class="imagens"> <!--Imagens que vão passar no carrossel-->
+
+                <div class="anuncio on"> <!--Headset-->
+                    <form id="airpodsmax" action="adicionar.php" method="post" style="display: none;">
+                        <input type="hidden" name="img" value="produtos/fones/airpodsMax.jpg">
+                        <input type="hidden" name="nome" value="Apple AirPods Max">
+                        <input type="hidden" name="preco" value="R$4299,00">
+                        <input type="hidden" name="desc" value="">
+                    </form>
+                    <div class="fundoDoAnuncio" href="#"
+                        onclick="document.getElementById('airpodsmax-p').submit(); return false;">
+                        <div class="tituloAnuncio">Fones de Ouvido AirPods Max</div>
+                        <p>Os AirPods Max oferecem áudio de alta-fidelidade com riqueza de detalhes para uma experiência
+                            sem igual.
+                            Cada peça do driver exclusivo contribui para produzir sons com o mínimo de distorção em toda
+                            a faixa
+                            audível. Assim você ouve cada nota com um novo nível de clareza</p>
+                        <img src="anuncios/headset.webp">
+                    </div>
+                    <div class="botaoComprarAnuncio"href="#"
+                        onclick="document.getElementById('airpodsmax').submit(); return false;"><a>Compre Agora</a>
+                    </div>
+                </div>
+
+
+                <div class="anuncio">
+                    <form id="foneios" action="adicionar.php" method="post" style="display: none;">
+                        <input type="hidden" name="img" value="produtos/fones/airpodspro.jpg">
+                        <input type="hidden" name="nome" value="Apple AirPods Pro">
+                        <input type="hidden" name="preco" value="R$2339,10">
+                        <input type="hidden" name="desc" value="">
+                    </form>
+                    <div class="fundoDoAnuncio" href="#"
+                        onclick="document.getElementById('foneios-p').submit(); return false;"> <!--foneIOS-->
+                        <div class="tituloAnuncio2">Fones de Ouvido AirPods Pro</div>
+                        <p class="p2">Descubra uma nova dimensão de áudio com os AirPods Pro. Equipados com o
+                            Cancelamento Ativo de Ruído ainda mais potente e Áudio Espacial Personalizado, eles
+                            transformam sua forma de ouvir música, assistir filmes ou fazer chamadas. </p>
+                        <img src="anuncios/foneIOS.svg" class="img2">
+                    </div>
+                    <div class="botaoComprarAnuncio" href="#" onclick="document.getElementById('foneios').submit(); return false;"><a>Compre Agora</a></div>
+                </div>
+
+                <div class="anuncio">
+                    <form id="echodot5" action="adicionar.php" method="post" style="display: none;">
+                        <input type="hidden" name="img" value="produtos/outros/outros3.png">
+                        <input type="hidden" name="nome" value="Echo Dot 5a geração Alexa">
+                        <input type="hidden" name="preco" value="R$425,99">
+                        <input type="hidden" name="desc" value="">
+                    </form>
+                    <div class="fundoDoAnuncio" href="#"
+                        onclick="document.getElementById('echodot5').submit(); return false;"> <!--Alexa-->
+                        <div class="tituloAnuncio3">Echo Dot Alexa</div>
+                        <p class="p3">Prepare-se para o dia com a previsão do tempo e as notícias. Não perca a hora com
+                            timers e
+                            lembretes. Mantenha contato com pessoas queridas fazendo chamadas. Tenha resposta para suas
+                            perguntas. Divirta-se com piadas. Tudo isso apenas com sua voz.</p>
+                        <img src="anuncios/echodot.svg" class="img3">
+                    </div>
+                    <div class="botaoComprarAnuncio" href="#"
+                        onclick="document.getElementById('echodot5').submit(); return false;"><a>Compre Agora</a></div>
+                </div>
+
+                <div class="anuncio">
+                    <form id="smartwatch" action="adicionar.php" method="post" style="display: none;">
+                        <input type="hidden" name="img" value="anuncios/applewatch.png">
+                        <input type="hidden" name="nome" value="SmartWatch">
+                        <input type="hidden" name="preco" value="R$259,90">
+                        <input type="hidden" name="desc" value="">
+                    </form>
+                    <div class="fundoDoAnuncio" href="#"
+                        onclick="document.getElementById('smartwatch-p').submit(); return false;"> <!--SmartWatch-->
+                        <div class="tituloAnuncio4">Apple Watch Series 9 </div>
+                        <p class="p4">Descubra o futuro no seu pulso com os novos Smart Watch!
+                            Design moderno, tecnologia de ponta e funcionalidades avançadas para saúde, fitness e
+                            conectividade. Escolha o modelo que combina com seu estilo e viva uma experiência
+                            inteligente todos os dias. </p>
+                        <img src="anuncios/applewatch.png" class="img4">
+                    </div>
+
+                    <div class="botaoComprarAnuncio" href="#"
+                        onclick="document.getElementById('smartwatch').submit(); return false;"><a>Compre Agora</a>
+                    </div>
+
+                </div>
+
+                <div class="anuncio">
+                    <form id="iphone15" action="adicionar.php" method="post" style="display: none;">
+                        <input type="hidden" name="img" value="produtos/celulares/iphone15pro.jpg">
+                        <input type="hidden" name="nome" value="iPhone15 Pro">
+                        <input type="hidden" name="preco" value="R$7399,00">
+                        <input type="hidden" name="desc" value="">
+                    </form>
+                    <div class="fundoDoAnuncio" href="#"
+                        onclick="document.getElementById('iphone15-p').submit(); return false;"> <!--Iphone15-->
+                        <div class="tituloAnuncio5"> iPhone 15 Pro Apple</div>
+                        <p class="p5">Conheça o iPhone 15 - potência, elegância e inovação em cada detalhe.
+                            Com design sofisticado, câmera avançada e desempenho impressionante, ele eleva sua
+                            experiência ao próximo nível. Capture momentos com qualidade profissional e aproveite toda a
+                            velocidade do chip mais moderno da Apple.</p>
+                        <img src="anuncios/iphoneok.svg" class="img5">
+                    </div>
+                    <div class="botaoComprarAnuncio" href="#"
+                        onclick="document.getElementById('iphone15').submit(); return false;"><a>Compre Agora</a></div>
+                </div>
+
+            </div>
+            <button id="botaoProximo" class="botao">
+                <span class="material-symbols-outlined size-20">
+                    arrow_forward_ios
+                </span>
+            </button>
+        </div>
+
+        <!-----------------------------Menu Explorar--------------------------------------->
+        <h1 class="centralizarExplorar">Explorar</h1>
+
+        <!---------------------------Carrossel de produtos------------------------------------>
+        <div class="containerCarrossel">
+            <div id="splide1" class="splide" aria-label="Splide Carousel">
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                        <div class="botaoProxPromo">
+                            <span class="material-symbols-outlined size-20">
+                                arrow_back_ios
+                            </span>
+                        </div>
+                        <button class="splide__arrow splide__arrow--next">
+                            <div class="botaoVoltaPromo">
+                                <span class="material-symbols-outlined size-20">
+                                    arrow_forward_ios
+                                </span>
+                            </div>
+                        </button>
+                </div>
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="fundoProdutos">
+                                <div class="prodCarrossel" href="#"
+                                    onclick="document.getElementById('tablet6-p').submit(); return false;"><img
+                                        src="produtos/tablets/Lenovo_Tab_P12_Pro.jpg" alt=""></div>
+                                <div class="superiorProdutos">
+                                    <a href="#" onclick="document.getElementById('tablet6').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
+                                    <div class="categoriaProduto">
+                                        <p class="categoria">Tablets</p>
+                                    </div>
+                                </div>
+                                <p class="nomeProdutos">Lenovo Tab P12 Pro</p>
+                                <div class="preco">
+                                    <p class="precoProdutos">R$5.299,00</p>
+                                </div>
+                                <div class="avaliacao">
+                                    <img src="icones/star.png" alt="estrela" class="estrela">
+                                    <p class="qtdAvaliacao">4.7 Avaliaram</p>
+                                </div>
+                            </div>
+
+                            <form id="tablet6" action="adicionar.php" method="post" style="display: none;">
+                                <input type="hidden" name="nome" value="Lenovo Tab P12 Pro">
+                                <input type="hidden" name="preco" value=" R$ 5299,00 ">
+                                <input type="hidden" name="img" value="produtos/tablets/Lenovo_Tab_P12_Pro.jpg">
+                            </form>
+                            <form id="tablet6-p" action="pagina-produto.php" method="post" style="display: none;">
+                                <input type="hidden" name="nome" value="Lenovo Tab P12 Pro">
+                                <input type="hidden" name="preco" value=" R$ 5299,00 ">
+                                <input type="hidden" name="img" value="produtos/tablets/Lenovo_Tab_P12_Pro.jpg">
+                                <input type="hidden" name="ava" value="5.0">
+                                <input type="hidden" name="desc"
+                                    value="Experimente um novo patamar de desempenho e imersão com o Lenovo Tab P12 Pro, um tablet premium desenvolvido para produtividade e entretenimento sem limites. Equipado com um poderoso processador Qualcomm Snapdragon 870, ele garante performance fluida para multitarefas, jogos, streaming e muito mais.">
+                            </form>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="fundoProdutos">
+                                <div class="prodCarrossel" href="#"
+                                    onclick="document.getElementById('fone11-p').submit(); return false;"><img
+                                        src="produtos/fones/redmibuds6Active.jpg" alt=""></div>
+                                <div class="superiorProdutos">
+                                    <a href="#" onclick="document.getElementById('fone11').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
+                                    <div class="categoriaProduto">
+                                        <p class="categoria">Fones</p>
+                                    </div>
+                                </div>
+                                <p class="nomeProdutos">Xiaomi Redmi Buds 6 Active</p>
+                                <div class="preco">
+                                    <p class="precoProdutos">R$149,99</p>
+                                </div>
+                                <div class="avaliacao">
+                                    <img src="icones/star.png" alt="estrela" class="estrela">
+                                    <p class="qtdAvaliacao">4.5 Avaliaram</p>
+                                </div>
+                            </div>
+                            <form id="fone11" action="adicionar.php" method="post" style="display: none;">
+                                <input type="hidden" name="nome" value="Xiaomi Redmi Buds 6 Active">
+                                <input type="hidden" name="preco" value=" R$ 149,99">
+                                <input type="hidden" name="img" value="produtos/fones/redmibuds6Active.jpg">
+                            </form>
+                            <form id="fone11-p" action="pagina-produto.php" method="post" style="display: none;">
+                                <input type="hidden" name="nome" value="Xiaomi Redmi Buds 6 Active">
+                                <input type="hidden" name="preco" value=" R$ 149,99">
+                                <input type="hidden" name="img" value="produtos/fones/redmibuds6Active.jpg">
+                                <input type="hidden" name="ava" value="4.5">
+                                <input type="hidden" name="desc" value="Drivers dinâmicos de 12mm, Bluetooth 5.3, som estéreo 
+                                com reforço de graves, resistência IPX4. Até 5h de bateria por carga e 30h com estojo. Microfone
+                                 com cancelamento de ruído para chamadas, controle por toque.">
+                            </form>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="fundoProdutos">
+                                <div class="prodCarrossel" href="#"
+                                    onclick="document.getElementById('celular5-p').submit(); return false;"><img
+                                        src="produtos/celulares/galaxys25.jpg" alt=""></div>
+                                <div class="superiorProdutos">
+                                    <a href="#"
+                                        onclick="document.getElementById('celular5').submit(); return false;"><span
+                                            class="material-symbols-outlined"> shopping_cart</span></a>
+                                    <div class="categoriaProduto">
+                                        <p class="categoria">Celulares</p>
+                                    </div>
+                                </div>
+                                <p class="nomeProdutos">Samsung Galaxy S25 Ultra (512 GB)</p>
+                                <div class="preco">
+                                    <p class="precoProdutos">R$7.874,47</p>
+                                </div>
+                                <div class="avaliacao">
+                                    <img src="icones/star.png" alt="estrela" class="estrela">
+                                    <p class="qtdAvaliacao">5.0 Avaliaram</p>
+                                </div>
+                            </div>
+
+                            <form id="celular5" action="adicionar.php" method="post" style="display: none;">
+                                <input type="hidden" name="nome" value="Samsung Galaxy S25 Ultra (512 GB)">
+                                <input type="hidden" name="preco" value=" R$ 7874,47">
+                                <input type="hidden" name="img" value="produtos/celulares/galaxys25.jpg">
+                            </form>
+                            <form id="celular5-p" action="pagina-produto.php" method="post" style="display: none;">
+                                <input type="hidden" name="nome" value="Samsung Galaxy S25 Ultra (512 GB)">
+                                <input type="hidden" name="preco" value=" R$ 7874,47 ">
+                                <input type="hidden" name="img" value="produtos/celulares/galaxys25.jpg">
+                                <input type="hidden" name="ava" value="5.0">
+                                <input type="hidden" name="desc"
+                                    value="Descubra o smartphone mais poderoso e completo da Samsung até hoje: o Galaxy S25 Ultra. Com desempenho de ponta, câmera profissional e armazenamento gigantesco de 512 GB, ele redefine o que é possível fazer com um celular.">
+                            </form>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="fundoProdutos">
+                                <div class="prodCarrossel" href="pagina-produto.php"
+                                    onclick="document.getElementById('processador1-p').submit(); return false;"><img
+                                        src="produtos/hardwares/AMD_Ryzen_9_7950X3D_4.2GHz_AM5.jpg" alt=""></div>
+                                <div class="superiorProdutos">
+                                    <a href="#"
+                                        onclick="document.getElementById('processador1').submit(); return false;"><span
+                                            class="material-symbols-outlined">shopping_cart</span></a>
+                                    <div class="categoriaProduto">
+                                        <p class="categoria">Hardwares</p>
+                                    </div>
+                                </div>
+                                <p class="nomeProdutos">AMD Ryzen 9 7950X3D 4.2GHz AM5</p>
+                                <div class="preco">
+                                    <p class="precoProdutos">R$4.499,99</p>
+                                </div>
+                                <div class="avaliacao">
+                                    <img src="icones/star.png" alt="estrela" class="estrela">
+                                    <p class="qtdAvaliacao">4.8 Avaliaram</p>
+                                </div>
+                            </div>
+                            <form id="processador1" action="adicionar.php" method="post" style="display: none;">
+                                <input type="hidden" name="nome" value="AMD Ryzen 9 7950X3D 4.2GHz AM5">
+                                <input type="hidden" name="preco" value=" R$ 4499,99 ">
+                                <input type="hidden" name="img"
+                                    value="produtos/hardwares/AMD_Ryzen_9_7950X3D_4.2GHz_AM5.jpg">
+                            </form>
+                            <form id="processador1-p" action="pagina-produto.php" method="post" style="display: none;">
+                                <input type="hidden" name="nome" value="AMD Ryzen 9 7950X3D 4.2GHz AM5">
+                                <input type="hidden" name="preco" value=" R$ 4499,99 ">
+                                <input type="hidden" name="img"
+                                    value="produtos/hardwares/AMD_Ryzen_9_7950X3D_4.2GHz_AM5.jpg">
+                                <input type="hidden" name="ava" value="4.8">
+                                <input type="hidden" name="desc"
+                                    value="Topo de linha AM5 com 16 núcleos e 32 threads, clock base de 4.2GHz (boost até 5.7GHz) e cache 3D V-Cache totalizando 144MB. Suporte a PCIe 5.0, DDR5 e TDP de 120W. Ideal para games e tarefas de produtividade intensas com eficiência térmica.">
+                            </form>
+                        </li>
+                        <li class="splide__slide">
+                            <!-----------------------------quarto produto da linha----------------------------------------->
+                            <div class="fundoProdutos">
+                                <div class="prodCarrossel" href="#"
+                                    onclick="document.getElementById('computador16-p').submit(); return false;"><img
+                                        src="produtos/pcs/pcHighflyer.jpg" alt=""></div>
+                                <div class="superiorProdutos">
+                                    <a href="#"
+                                        onclick="document.getElementById('computador16').submit(); return false;"><span
+                                            class="material-symbols-outlined"> shopping_cart</span></a>
+                                    <div class="categoriaProdutoPC">
+                                        <p class="categoria">Computadores</p>
+                                    </div>
+                                </div>
+                                <p class="nomeProdutos">PC Gamer Highflyer AMD Ryzen 7 9800X3D</p>
+                                <div class="preco">
+                                    <p class="precoProdutos">R$13.733,63</p>
+                                </div>
+                                <div class="avaliacao">
+                                    <img src="icones/star.png" alt="estrela" class="estrela">
+                                    <p class="qtdAvaliacao">4.7 Avaliaram</p>
+                                </div>
+                            </div>
+                            <form id="computador16" action="adicionar.php" method="post" style="display: none;">
+                                <input type="hidden" name="nome" value="PC Gamer Highflyer AMD Ryzen 7 9800X3D">
+                                <input type="hidden" name="preco" value=" R$ 13733,63">
+                                <input type="hidden" name="img" value="produtos/pcs/pcHighflyer.jpg">
+                            </form>
+
+                            <form id="computador16-p" action="pagina-produto.php" method="post" style="display: none;">
+                                <input type="hidden" name="nome" value="PC Gamer Highflyer AMD Ryzen 7 9800X3D">
+                                <input type="hidden" name="preco" value=" R$ 13733,63">
+                                <input type="hidden" name="img" value="produtos/pcs/pcHighflyer.jpg">
+                                <input type="hidden" name="ava" value="4.7">
+                                <input type="hidden" name="desc" value="Voltado para máxima performance em jogos, traz o Ryzen 7 9800X3D 
+                                com cache 3D e eficiência térmica. Compatível com GPUs topo de linha e memórias DDR5 de alta frequência. 
+                                Perfeito para resoluções elevadas, streaming e multitarefa intensa.">
+                            </form>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="fundoProdutos">
+                                <div class="prodCarrossel"
+                                    onclick="document.getElementById('outros12-p').submit(); return false;"><img
+                                        src="produtos/outros/outros12.png" alt=""></div>
+                                <div class="superiorProdutos">
+                                    <a href="#"
+                                        onclick="document.getElementById('outros12').submit(); return false;"><span
+                                            class="material-symbols-outlined">shopping_cart</span></a>
+                                    <div class="categoriaProduto">
+                                        <p class="categoria">Outros</p>
+                                    </div>
+                                </div>
+                                <p class="nomeProdutos">PS5 Slim Digital Edition</p>
+                                <div class="preco">
+                                    <p class="precoProdutos">R$3599,99</p>
+                                </div>
+                                <div class="avaliacao">
+                                    <img src="icones/star.png" alt="estrela" class="estrela">
+                                    <p class="qtdAvaliacao">5.0 Avaliaram</p>
+                                </div>
+                            </div>
+                            <form id="outros12" action="adicionar.php" method="post" style="display: none;">
+                                <input type="hidden" name="nome" value="PS5 Slim Digital Edition">
+                                <input type="hidden" name="preco" value=" R$ 3599,99 ">
+                                <input type="hidden" name="img" value="produtos/outros/outros12.png">
+                            </form>
+                            <form id="outros12-p" action="pagina-produto.php" method="post" style="display: none;">
+                                <input type="hidden" name="nome" value="PS5 Slim Digital Edition">
+                                <input type="hidden" name="preco" value=" R$ 3599,99 ">
+                                <input type="hidden" name="img" value="produtos/outros/outros12.png">
+                                <input type="hidden" name="ava" value="5.0">
+                                <input type="hidden" name="desc"
+                                    value="Versão compacta do PS5, com CPU AMD Zen 2 de 8 núcleos a 3,5 GHz, GPU RDNA 2 com 10,3 TFLOPS e 16 GB GDDR6. Armazenamento SSD de 825 GB com IO ultrarrápido, suporte a Ray Tracing, 4K/120 fps, temp-aware cooling e design redesenhado ~30 % menor.">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script>
+            var splide = new Splide('#splide1', {
+                type: 'loop',
+                perPage: 4,
+                perMove: 1,
+            });
+            splide.mount();
+        </script>
+        <!---------------------------Anuncio Samsung------------------------------------>
+        <div class="anuncioSamsung">
+            <form id="celular6" action="adicionar.php" method="post" style="display: none;">
+                <input type="hidden" name="nome" value="Samsung Galaxy S24 (256 GB)">
+                <input type="hidden" name="preco" value=" R$ 3499,00">
+                <input type="hidden" name="img" value="produtos/celulares/galaxys24.jpg">
+            </form>
+            <div class="fundoSamsungS24">
+                <div class="tituloAnuncio">Smartphone <span style="color: #adb0b7;">Samsung</span> Galaxy <span
+                        style="color: #adb0b7;">S24</span></div>
+                <p>O Samsung Galaxy S24 é um smartphone topo de linha com tela AMOLED, câmera avançada, desempenho
+                    rápido com o Snapdragon 8 Gen 3 e design elegante.</p>
+                <img src="anuncios/galaxyAnuncio.svg">
+                <div class="botaoComprarAnuncio1" href="#"
+                    onclick="document.getElementById('celular5').submit(); return false;">Compre Agora</div>
+            </div>
+        </div>
+
+        <form id="celular5" action="adicionar.php" method="post" style="display: none;">
+            <input type="hidden" name="nome" value="Samsung Galaxy S25 Ultra (512 GB)">
+            <input type="hidden" name="preco" value=" R$7874,47">
+            <input type="hidden" name="img" value="produtos/celulares/galaxys25.jpg">
+        </form>
+        <!-----------------------------Menu Promoções--------------------------------------->
+        <h1 class="centralizarPromo">Promoções</h1>
+
+        <!---------------------------Carrossel de produtos 2 ------------------------------------>
+        <div class="containerCarrossel">
+            <div id="splide2" class="splide" aria-label="Splide Carousel">
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                        <div class="botaoProxPromo">
+                            <span class="material-symbols-outlined size-20">
+                                arrow_back_ios
+                            </span>
+                        </div>
+                        <button class="splide__arrow splide__arrow--next">
+                            <div class="botaoVoltaPromo">
+                                <span class="material-symbols-outlined size-20">
+                                    arrow_forward_ios
+                                </span>
+                            </div>
+                        </button>
+                </div>
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="fundoProdutos">
+                                <div class="prodCarrossel" href="#"
+                                    onclick="document.getElementById('celular15-p').submit(); return false;"><img
+                                        src="produtos/celulares/motog55.jpg" alt=""></div>
+                                <div class="superiorProdutos">
+                                    <a href="#"
+                                        onclick="document.getElementById('celular15').submit(); return false;"><span
+                                            class="material-symbols-outlined"> shopping_cart</span></a>
+                                    <div class="categoriaProduto">
+                                        <p class="categoria">Celulares</p>
+                                    </div>
+                                </div>
+                                <p class="nomeProdutos">Motorola Moto G55 (256 GB)</p>
+                                <div class="preco">
+                                    <p class="precoProdutos">R$1.439,10</p>
+                                </div>
+                                <div class="avaliacao">
+                                    <img src="icones/star.png" alt="estrela" class="estrela">
+                                    <p class="qtdAvaliacao">4.7 Avaliaram</p>
+                                </div>
+                            </div>
+                            <form id="celular15" action="adicionar.php" method="post" style="display: none;">
+                                <input type="hidden" name="nome" value="Motorola Moto G55 (256 GB)">
+                                <input type="hidden" name="preco" value=" R$ 1439,10">
+                                <input type="hidden" name="img" value="produtos/celulares/motog55.jpg">
+                            </form>
+
+                            <form id="celular15-p" action="pagina-produto.php" method="post" style="display: none;">
+                                <input type="hidden" name="nome" value="Motorola Moto G55 (256 GB)">
+                                <input type="hidden" name="preco" value=" R$ 1439,10">
+                                <input type="hidden" name="img" value="produtos/celulares/motog55.jpg">
+                                <input type="hidden" name="ava" value="4.7">
+                                <input type="hidden" name="desc"
+                                    value="Modelo acessível com tela AMOLED ou LCD de 6,6'' a 120Hz, 
+                                    chip Snapdragon 4 Gen 2 e 6GB de RAM. Deve contar com câmera principal de 50MP, sensor de profundidade 
+                                    e gravação em Full HD. A bateria de 5.000mAh terá carregamento de 20W. Vem com Android 14">
+                            </form>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="fundoProdutos">
+                                <div class="prodCarrossel" href="#"
+                                    onclick="document.getElementById('fone15-p').submit(); return false;"><img
+                                        src="produtos/fones/vervebuds100.jpg" alt=""></div>
+                                <div class="superiorProdutos">
+                                    <a href="#" onclick="document.getElementById('fone15').submit(); return false;"><span class="material-symbols-outlined"> shopping_cart</span></a>
+                                    <div class="categoriaProduto">
+                                        <p class="categoria">Fones</p>
+                                    </div>
+                                </div>
+                                <p class="nomeProdutos">Motorola VerveBuds 100</p>
+                                <div class="preco">
+                                    <p class="precoProdutos">R$199,00</p>
+                                </div>
+                                <div class="avaliacao">
+                                    <img src="icones/star.png" alt="estrela" class="estrela">
+                                    <p class="qtdAvaliacao">4.3 Avaliaram</p>
+                                </div>
+                            </div>
+                            <form id="fone15" action="adicionar.php" method="post" style="display: none;">
+                                <input type="hidden" name="nome" value="Motorola VerveBuds 100">
+                                <input type="hidden" name="preco" value=" R$ 199,00">
+                                <input type="hidden" name="img" value="produtos/fones/vervebuds100.jpg">
+                            </form>
+                            <form id="fone15-p" action="pagina-produto.php" method="post" style="display: none;">
+                                <input type="hidden" name="nome" value="Motorola VerveBuds 100">
+                                <input type="hidden" name="preco" value=" R$ 199,00">
+                                <input type="hidden" name="img" value="produtos/fones/vervebuds100.jpg">
+                                <input type="hidden" name="ava" value="4.3">
+                                <input type="hidden" name="desc" value="Fones TWS com drivers de 6mm, Bluetooth 5.0, até 5h
+                                 de bateria por carga e 14h com o estojo. IPX5, compatível com Siri e Google Assistant.
+                                  Design ergonômico com encaixe seguro, som equilibrado e microfone para chamadas.">
+                            </form>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="fundoProdutos">
+                                <div class="prodCarrossel" href="#"
+                                    onclick="document.getElementById('perifericos5-p').submit(); return false;"><img
+                                        src="produtos/perifericos/perifericos5.png" alt="">
+                                </div>
+                                <div class="superiorProdutos">
+                                    <a href="#"
+                                        onclick="document.getElementById('perifericos5').submit(); return false;"><span
+                                            class="material-symbols-outlined"> shopping_cart</span></a>
+                                    <div class="categoriaProduto">
+                                        <p class="categoria">Periféricos</p>
+                                    </div>
+                                </div>
+                                <p class="nomeProdutos">Gabinete Gamer Husky Dome 100</p>
+                                <div class="preco">
+                                    <p class="precoProdutos">R$139,90</p>
+                                </div>
+                                <div class="avaliacao">
+                                    <img src="icones/star.png" alt="estrela" class="estrela">
+                                    <p class="qtdAvaliacao">4.1 Avaliaram</p>
+                                </div>
+                            </div>
+                            <form id="perifericos5" action="adicionar.php" method="post" style="display: none;">
+                                <input type="hidden" name="nome" value="Gabinete Gamer Husky Dome 100">
+                                <input type="hidden" name="preco" value=" R$ 139,90 ">
+                                <input type="hidden" name="img" value="produtos/perifericos/perifericos5.png">
+                            </form>
+                            <form id="perifericos5-p" action="pagina-produto.php" method="post" style="display: none;">
+                                <input type="hidden" name="nome" value="Gabinete Gamer Husky Dome 100">
+                                <input type="hidden" name="preco" value=" R$ 139,90 ">
+                                <input type="hidden" name="img" value="produtos/perifericos/perifericos5.png">
+                                <input type="hidden" name="ava" value="4.1">
+                                <input type="hidden" name="desc"
+                                    value="Com painel frontal em mesh para melhor fluxo de ar, acompanha 3 fãs RGB frontais e 1 traseira. Suporta placas ATX/mATX/ITX, GPUs de até 330 mm e coolers de CPU de até 160 mm. Possui lateral em vidro temperado, bom gerenciamento de cabos e filtros de poeira.">
+                            </form>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="fundoProdutos">
+                                <div class="prodCarrossel" href="#"
+                                    onclick="document.getElementById('perifericos2-p').submit(); return false;"><img
+                                        src="produtos/perifericos/perifericos2.png" alt="">
+                                </div>
+                                <div class="superiorProdutos">
+                                    <a href="#"
+                                        onclick="document.getElementById('perifericos2').submit(); return false;"><span
+                                            class="material-symbols-outlined"> shopping_cart</span></a>
+                                    <div class="categoriaProduto">
+                                        <p class="categoria">Periféricos</p>
+                                    </div>
+                                </div>
+                                <p class="nomeProdutos">Headset Gamer HyperX Cloud Stinger 2</p>
+                                <div class="preco">
+                                    <p class="precoProdutos">R$165,90</p>
+                                </div>
+                                <div class="avaliacao">
+                                    <img src="icones/star.png" alt="estrela" class="estrela">
+                                    <p class="qtdAvaliacao">4.0 Avaliaram</p>
+                                </div>
+                            </div>
+                            <form id="perifericos2" action="adicionar.php" method="post" style="display: none;">
+                                <input type="hidden" name="nome" value="Headset Gamer HyperX Cloud Stinger 2">
+                                <input type="hidden" name="preco" value=" R$ 165,90 ">
+                                <input type="hidden" name="img" value="produtos/perifericos/perifericos2.png">
+                            </form>
+                            <form id="perifericos2-p" action="pagina-produto.php" method="post" style="display: none;">
+                                <input type="hidden" name="nome" value="Headset Gamer HyperX Cloud Stinger 2">
+                                <input type="hidden" name="preco" value=" R$ 165,90 ">
+                                <input type="hidden" name="img" value="produtos/perifericos/perifericos2.png">
+                                <input type="hidden" name="ava" value="4.0">
+                                <input type="hidden" name="desc"
+                                    value="Com estrutura plástica e protetores auriculares de espuma com couro sintético, o Cloud Stinger 2 pesa cerca de 272 g. Drivers de 50 mm entregam resposta ampla (10 Hz–28 kHz) e microfone condensador bidirecional com cancelamento passivo. Conexão via cabo USB 2.0, áudio virtual DTS Headphone:X, controles onboard e bateria integrada para até 20 h">
+                            </form>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="fundoProdutos">
+                                <div class="prodCarrossel" href="#"
+                                    onclick="document.getElementById('computador10-p').submit(); return false;"><img
+                                        src="produtos/pcs/pcGamer.webp" alt=""></div>
+                                <div class="superiorProdutos">
+                                    <a href="#"
+                                        onclick="document.getElementById('computador10').submit(); return false;"><span
+                                            class="material-symbols-outlined"> shopping_cart</span></a>
+                                    <div class="categoriaProdutoPC">
+                                        <p class="categoria">Computadores</p>
+                                    </div>
+                                </div>
+                                <p class="nomeProdutos">PC Gamer AMD Ryzen 5 5600G</p>
+                                <div class="preco">
+                                    <p class="precoProdutos">R$ 3.049,00</p>
+                                </div>
+                                <div class="avaliacao">
+                                    <img src="icones/star.png" alt="estrela" class="estrela">
+                                    <p class="qtdAvaliacao">4.9 Avaliaram</p>
+                                </div>
+                            </div>
+                            <form id="computador10" action="adicionar.php" method="post" style="display: none;">
+                                <input type="hidden" name="nome" value="PC Gamer AMD Ryzen 5 5600G">
+                                <input type="hidden" name="preco" value=" R$ 3049,00">
+                                <input type="hidden" name="img" value="produtos/pcs/pcGamer.webp">
+                            </form>
+
+                            <form id="computador10-p" action="pagina-produto.php" method="post" style="display: none;">
+                                <input type="hidden" name="nome" value="PC Gamer AMD Ryzen 5 5600G">
+                                <input type="hidden" name="preco" value=" R$ 3049,00">
+                                <input type="hidden" name="img" value="produtos/pcs/pcGamer.webp">
+                                <input type="hidden" name="ava" value="4.9">
+                                <input type="hidden" name="desc" value="Equipado com Ryzen 5 5600G (6 núcleos, gráficos Vega integrados), é ideal para jogos 
+                                    leves e produtividade. Conta com até 16GB DDR4 e SSD NVMe, dispensando GPU dedicada em muitos jogos. Sistema acessível e eficiente 
+                                    para iniciantes.">
+                            </form>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="fundoProdutos">
+                                <div class="prodCarrossel" href="#"
+                                    onclick="document.getElementById('tablet7-p').submit(); return false;"><img
+                                        src="produtos/tablets/Amazon_Fire_HD_10_Plus_(2023).jpg" alt=""></div>
+                                <div class="superiorProdutos">
+                                    <a href="#"
+                                        onclick="document.getElementById('tablet7').submit(); return false;"><span
+                                            class="material-symbols-outlined"> shopping_cart</span></a>
+                                    <div class="categoriaProduto">
+                                        <p class="categoria">Tablets</p>
+                                    </div>
+                                </div>
+                                <p class="nomeProdutos">Amazon Fire HD 10 Plus</p>
+                                <div class="preco">
+                                    <p class="precoProdutos">R$1.199,00</p>
+                                </div>
+                                <div class="avaliacao">
+                                    <img src="icones/star.png" alt="estrela" class="estrela">
+                                    <p class="qtdAvaliacao">4.5 Avaliaram</p>
+                                </div>
+                            </div>
+                            <form id="tablet7" action="adicionar.php" method="post" style="display: none;">
+                                <input type="hidden" name="nome" value="Amazon Fire HD 10 Plus">
+                                <input type="hidden" name="preco" value=" R$ 1199,00 ">
+                                <input type="hidden" name="img"
+                                    value="produtos/tablets/Amazon_Fire_HD_10_Plus_(2023).jpg">
+                            </form>
+                            <form id="tablet7-p" action="pagina-produto.php" method="post" style="display: none;">
+                                <input type="hidden" name="nome" value="Amazon Fire HD 10 Plus">
+                                <input type="hidden" name="preco" value=" R$ 1199,00 ">
+                                <input type="hidden" name="img"
+                                    value="produtos/tablets/Amazon_Fire_HD_10_Plus_(2023).jpg">
+                                <input type="hidden" name="ava" value="4.5">
+                                <input type="hidden" name="desc"
+                                    value="Tela IPS de 10,1'' 1080p, 4 GB de RAM e processador octa‑core, destinado a consumo multimídia leve. Inclui carregamento sem fio Qi, armazenamento expansível via micro-SD e autonomia de até 12 h, Ideal para uso casual, leitura e vídeo; carrega via USB‑C.">
+                            </form>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="fundoProdutos">
+                                <div class="prodCarrossel" href="#"
+                                    onclick="document.getElementById('outros6-p').submit(); return false;"><img
+                                        src="produtos/outros/outros6.png" alt=""></div>
+                                <div class="superiorProdutos">
+                                    <a href="#"
+                                        onclick="document.getElementById('outros6').submit(); return false;"><span
+                                            class="material-symbols-outlined">shopping_cart</span></a>
+                                    <div class="categoriaProduto">
+                                        <p class="categoria">Outros</p>
+                                    </div>
+                                </div>
+                                <p class="nomeProdutos">Projetor Portátil 4K 1080p com Wi-Fi</p>
+                                <div class="preco">
+                                    <p class="precoProdutos">R$299,90</p>
+                                </div>
+                                <div class="avaliacao">
+                                    <img src="icones/star.png" alt="estrela" class="estrela">
+                                    <p class="qtdAvaliacao">5.0 Avaliaram</p>
+                                </div>
+                            </div>
+                            <form id="outros6" action="adicionar.php" method="post" style="display: none;">
+                                <input type="hidden" name="nome" value="Projetor Portátil 4K 1080p com Wi-Fi">
+                                <input type="hidden" name="preco" value=" R$ 299,90 ">
+                                <input type="hidden" name="img" value="produtos/outros/outros6.png">
+                            </form>
+                            <form id="outros6-p" action="pagina-produto.php" method="post" style="display: none;">
+                                <input type="hidden" name="nome" value="Projetor Portátil 4K 1080p com Wi-Fi">
+                                <input type="hidden" name="preco" value=" R$ 299,90 ">
+                                <input type="hidden" name="img" value="produtos/outros/outros6.png">
+                                <input type="hidden" name="ava" value="4.8">
+                                <input type="hidden" name="desc"
+                                    value="Projetor de 1080p nativo que aceita até 4K via entrada, com brilho de ~400 ANSI Lumens, contraste de 2000:1 e correção trapezoidal automática. Inclui Wi‑Fi 5, Bluetooth 4.2, sistema Android integrado, alto‑falante de 5 W, duas portas HDMI e autonomia de até 2,5 h com bateria interna.">
+                            </form>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="fundoProdutos">
+                                <div class="prodCarrossel" href="#"
+                                    onclick="document.getElementById('outros8-p').submit(); return false;"><img
+                                        src="produtos/outros/outros8.png" alt=""></div>
+                                <div class="superiorProdutos">
+                                    <a href="#"
+                                        onclick="document.getElementById('outros8').submit(); return false;"><span
+                                            class="material-symbols-outlined">shopping_cart</span></a>
+                                    <div class="categoriaProduto">
+                                        <p class="categoria">Outros</p>
+                                    </div>
+                                </div>
+                                <p class="nomeProdutos">JBL Caixa de Som Bluetooth Go Essential</p>
+                                <div class="preco">
+                                    <p class="precoProdutos">R$169,00</p>
+                                </div>
+                                <div class="avaliacao">
+                                    <img src="icones/star.png" alt="estrela" class="estrela">
+                                    <p class="qtdAvaliacao">5.0 Avaliaram</p>
+                                </div>
+                            </div>
+                </div>
+                <form id="outros8" action="adicionar.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="JBL Caixa de Som Bluetooth Go Essential">
+                    <input type="hidden" name="preco" value=" R$ 169,00 ">
+                    <input type="hidden" name="img" value="produtos/outros/outros8.png">
+                </form>
+                <form id="outros8-p" action="pagina-produto.php" method="post" style="display: none;">
+                    <input type="hidden" name="nome" value="JBL Caixa de Som Bluetooth Go Essential">
+                    <input type="hidden" name="preco" value=" R$ 169,00 ">
+                    <input type="hidden" name="img" value="produtos/outros/outros8.png">
+                    <input type="hidden" name="ava" value="4.8">
+                    <input type="hidden" name="desc"
+                        value="Pequena (209 × 68 × 56 mm, 254 g) com alto‑falante de 5 W, Bass Radiator passivo e frequência 200 Hz–20 kHz. Bluetooth 5.3 com multipoint, autonomia de até 10 h, IP67 à prova d’água e som estéreo potente para o tamanho compacto.">
+                </form>
+                </li>
+                </ul>
+            </div>
+        </div>
+
+        <script>
+            var splide = new Splide('#splide2', {
+                type: 'loop',
+                perPage: 4,
+                perMove: 1,
+            });
+
+            splide.mount();
+        </script>
+
+
+        <footer>
+            <div class="footerNovosProdutos">
+                <h1>Pronto para receber nossos novos produtos?</h1>
+                <form onsubmit="alert('Email Enviado!'); return false;">
+                <input type="email" name="emailfooter" placeholder="Seu Email" required>
+                <button type="submit">Enviar</button></form>
+
+            </div>
+            <div class="footerSobre">
+                <div class="sobref">
+                    <li><a href="" class="negritosobre">Sobre</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Sobre Nós</a></li>
+                    <li><a href="">Contate-nos</a></li>
+                </div>
+                <div class="suportef">
+                    <li><a href="" class="negritosuporte">Suporte</a></li>
+                    <li><a href="">Contate-nos</a></li>
+                    <li><a href="">Entrega</a></li>
+                    <li><a href="">Devolução</a></li>
+                    <li><a href="">FAQ</a></li>
+                </div>
+                <div class="mexerCurriculo">
+                    <div class="footerCurriculo">
+                        <p>Trabalhe conosco</p>
+                        <div class="botaocurriculo"><a href="">Envie seu curriculo aqui!</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footerf">
+                <div class="footerredes">
+                    <div class="tamanhof">
+                        <div class="blocosfooter">
+                            <a href="#">Cookies</a>
+                            <a href="#" class="espacoblocos">Condições de uso</a>
+                        </div>
+                        <div class="blocosfooter">
+                            <a href="#">©2025 etech.com.br</a>
+                            <a href="#" class="espacoblocos">Privacidade</a>
+                        </div>
+                        <div class="blocosfooter">
+                            <a href="#">Nossas redes sociais</a>
+                            <div class="imgbloco">
+                                <a href="#"><img src="icones/youtube-logo.png"></a>
+                                <a href="#"><img src="icones/instagram-logo.png"></a>
+                                <a href="#"><img src="icones/x-logo.png"></a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+<script>  // script feito para borrar o fundo quando o mouse passar por cima do header
+
+    const box = document.getElementById("box")
+    const box1 = document.getElementById("box1")
+    const borrar = document.getElementById("tudo")
+
+
+    const boxs = [box, box1]
+    boxs.forEach((bx) => {
+
+        bx.addEventListener("mouseenter", () => {
+            borrar.classList.add("borrar");
+        });
+
+        bx.addEventListener("mouseleave", () => {
+            borrar.classList.remove("borrar")
+        })
+
+    })
+</script>
+<script> // script feito para trocar o anuncio da tela inicial
+
+    const botaoPro = document.getElementById("botaoProximo")
+    const botaoVol = document.getElementById("botaoVoltar")
+    const anuncio = document.querySelectorAll(".anuncio")
+
+    let contador = 0;
+
+    const tempoTransicao = 3700; // quantidade de tempo entre cada transição dos slides
+
+    let intervalo = setInterval(proximaImagem, tempoTransicao); //Para iniciar o intervalo de tempo para a transição de slides
+
+    //paramos o intervalo de tempo quando o mouse passar sobre o carrossel
+    document.querySelector(".carrossel").addEventListener("mouseover", () => {
+        clearInterval(intervalo);
+    });
+
+    //Continuar o intervalo de tempo quando o mouse sair do carrossel
+    document.querySelector(".carrossel").addEventListener("mouseout", () => {
+        intervalo = setInterval(proximaImagem, tempoTransicao);
+    });
+
+    function esconderImagem() {
+        anuncio.forEach(item => item.classList.remove('on'))
+    }
+
+    function aparecerImagem() {
+        anuncio[contador].classList.add('on')
+    }
+
+    function proximaImagem() {
+        esconderImagem()
+        if (contador === anuncio.length - 1) {
+            contador = 0
+        } else {
+            contador++
+        }
+        aparecerImagem()
+    }
+
+    function voltarImagem() {
+        esconderImagem()
+        if (contador === 0) {
+            contador = anuncio.length - 1
+        } else {
+            contador--
+        }
+        aparecerImagem()
+    }
+
+    botaoPro.addEventListener('click', proximaImagem)
+    botaoVol.addEventListener('click', voltarImagem)
+</script>
+
+</html>
